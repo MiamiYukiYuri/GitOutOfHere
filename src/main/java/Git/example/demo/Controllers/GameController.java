@@ -23,5 +23,9 @@ public class GameController {
     public List<Game> getAllGames() {
         return gameService.getAllGames();
     }
+    @PutMapping
+    public Game updateGame(@RequestBody Game game) {
+        return gameService.updateGame(game);
+    }
 
 }

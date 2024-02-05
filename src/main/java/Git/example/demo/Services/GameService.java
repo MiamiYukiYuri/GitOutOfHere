@@ -17,8 +17,14 @@ public class GameService {
     public Game createGame(Game game){
         return gameRepository.save(game);
     }
-    // GET ALL GAMES
+    // GET ALL Games
     public List<Game> getAllGames() {
         return gameRepository.findAll();
     }
+    // UPDATE a game
+    public Game updateGame(Game game) {
+        return gameRepository.save(game);
+    }
+
+
 }
