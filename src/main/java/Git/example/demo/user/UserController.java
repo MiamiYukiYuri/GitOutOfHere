@@ -4,5 +4,3 @@ public class UserController {
     //test 2
 }
 
-
-// git är cool
