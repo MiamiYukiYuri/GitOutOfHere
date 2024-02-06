@@ -23,6 +23,13 @@ public class GameController {
     public List<Game> getAllGames() {
         return gameService.getAllGames();
     }
+
+    // Get filtrera på taggar
+    @GetMapping("/search")
+    public List<Game> findGameByTags(@RequestParam List<String> tags) {
+        return gameService.findGameByTags(tags);
+    }
+
     @PutMapping
     public Game updateGame(@RequestBody Game game) {
         return gameService.updateGame(game);
