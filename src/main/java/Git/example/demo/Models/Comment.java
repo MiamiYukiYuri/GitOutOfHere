@@ -3,13 +3,13 @@ package Git.example.demo.Models;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "comments")
-public class Comments {
+public class Comment {
 
     private String author = "Frasse";
 
     private String text;
 
-    public Comments() {
+    public Comment() {
     }
 
     public String getAuthor() {

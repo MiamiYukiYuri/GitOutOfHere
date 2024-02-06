@@ -1,4 +1,7 @@
 package Git.example.demo.Repository;
 
-public interface CommentRepository {
+import Git.example.demo.Models.Comment;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface CommentRepository extends MongoRepository<Comment, String> {
 }
