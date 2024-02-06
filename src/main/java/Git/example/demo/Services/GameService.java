@@ -26,5 +26,10 @@ public class GameService {
         return gameRepository.save(game);
     }
 
+    // Filter by tags
+    public List<Game> findGameByTags(List<String> tags) {
+        return gameRepository.findByTagsIn(tags);
+    }
+
 
 }
