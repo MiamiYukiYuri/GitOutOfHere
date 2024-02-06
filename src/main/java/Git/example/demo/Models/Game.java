@@ -45,4 +45,12 @@ public class Game {
     public Date getCreated_at() {
         return created_at;
     }
+
+    public List<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
+    }
 }
