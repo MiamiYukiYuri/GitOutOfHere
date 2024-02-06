@@ -36,5 +36,10 @@ public class GameService {
                 .orElseThrow(() -> new EntityNotFoundException("Recipe with id: " + gameId + " was not found!"));
     }
 
+    // Filter by tags
+    public List<Game> findGameByTags(List<String> tags) {
+        return gameRepository.findByTagsIn(tags);
+    }
+
 
 }
