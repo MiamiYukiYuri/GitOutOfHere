@@ -27,5 +27,4 @@ public class GameController {
     public Game updateGame(@RequestBody Game game) {
         return gameService.updateGame(game);
     }
-
 }
