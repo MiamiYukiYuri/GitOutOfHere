@@ -23,7 +23,12 @@ public class Game {
     @CreatedDate
     public Date created_at;
 
+    public List<Comment> comments = new ArrayList<>();
+
     public Game() {
+    }
+    public void addComment (Comment comment) {
+        this.comments.add(comment);
     }
 
     // Getters
@@ -43,11 +48,20 @@ public class Game {
         return created_at;
     }
 
+
+    public List<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
+
     public List<String> getTags() {
         return tags;
     }
 
     public void setTags(List<String> tags) {
         this.tags = tags;
+
     }
 }
