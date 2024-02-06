@@ -1,4 +1,7 @@
 package Git.example.demo.Repository;
 
-public interface OrderRepository {
+import Git.example.demo.Models.Order;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface OrderRepository extends MongoRepository<Order, String> {
 }
