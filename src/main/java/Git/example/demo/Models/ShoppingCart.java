@@ -3,13 +3,16 @@ package Git.example.demo.Models;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.List;
+
 @Document(collection = "ShoppingCart")
 
 public class ShoppingCart {
     @Id
     private String id;
 
-    private String gameId;
+    // array list of games?
+    private List<String> gameId;
 
     private String customerId;
 
@@ -27,9 +30,9 @@ public class ShoppingCart {
         return id;
     }
 
-    public String getGameId() {
+   /* public String getGameId() {
         return gameId;
-    }
+    } */
 
     public String getCustomerId() {
         return customerId;
